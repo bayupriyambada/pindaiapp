@@ -19,6 +19,7 @@ use App\Livewire\Back\Kaprodi\Dosen as KaprodiDosen;
 use App\Livewire\Back\Kaprodi\Penelitian\Detail as PenelitianDetail;
 use App\Livewire\Back\Kaprodi\Pengabdian\Detail as PengabdianDetail;
 use App\Livewire\Back\Kaprodi\Publikasi;
+use App\Livewire\Back\Kaprodi\Publikasi\Form;
 use App\Livewire\Back\MyAccount;
 use Illuminate\Support\Facades\Route;
 
@@ -53,6 +54,8 @@ Route::prefix('kaprodi')->name('kaprodi.')->group(function () {
     Route::get('dosen', KaprodiDosen::class)->name('dosen');
     
     Route::get('publikasi', Publikasi::class)->name('publikasi');
+    Route::get('publikasi/create', Form::class)->name('publikasi.create');
+    Route::get('publikasi/{publikasiId}/edit', Form::class)->name('publikasi.edit');
     Route::get('my-account', \App\Livewire\Back\Kaprodi\MyAccount::class)->name('my-account');
     
 });

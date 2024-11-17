@@ -1,7 +1,11 @@
+@section('title', 'Dasbor')
+
 <div>
     <div class="row">
+        <x-custom.breadcrumb :items="[['title' => 'Dasbor']]" />
+    </div>
+    <div class="row">
         <div class="col-lg-12 col-md-4 order-1">
-            <h5 class="pb-lg-2 pb-1">Penelitian  / Pengabdian</h5>
             <div class="row">
                 <div class="col-lg-3 col-md-12 col-12 mb-4">
                     <div class="card">
@@ -103,19 +107,20 @@
                         </div>
                     </div>
                 </div>
-               
+
             </div>
         </div>
         <div class="col-lg-12 col-md-4 order-1">
-           <div class="card mb-4">
-            <div class="card-body d-flex flex-column">
-                <span class="fw-bold">Dasbor Prodi</span>
-                <span class="text-muted">
-                    Anda dapat menyetujui penelitian dan pengabdian kepada masyarakat dengan surat rekomendasi dari layanan:
-                </span>
+            <div class="card mb-4">
+                <div class="card-body d-flex flex-column">
+                    <span class="fw-bold">Dasbor Prodi</span>
+                    <span class="text-muted">
+                        Anda dapat menyetujui penelitian dan pengabdian kepada masyarakat dengan surat rekomendasi dari
+                        layanan:
+                    </span>
 
+                </div>
             </div>
-           </div>
             <div class="row">
                 <div class="col-lg-6 col-md-12 col-12 mb-4">
                     <div class="card">
@@ -124,9 +129,10 @@
                                 <div class="avatar flex-shrink-0">
                                     <span class="badge bg-label-success rounded">Penelitian</span>
                                 </div>
-                               
+
                             </div>
-                            <a href="javascript:void(0);" class="btn btn-outline-primary w-100"> Lihat Ajuan Penelitian <i class="bx bx-right-arrow-alt"></i></a>
+                            <a href="javascript:void(0);" class="btn btn-outline-primary w-100"> Lihat Ajuan Penelitian
+                                <i class="bx bx-right-arrow-alt"></i></a>
                         </div>
                     </div>
                 </div>
@@ -137,9 +143,10 @@
                                 <div class="avatar flex-shrink-0">
                                     <span class="badge bg-label-info rounded">Pengabdian</span>
                                 </div>
-                               
+
                             </div>
-                            <a href="javascript:void(0);" class="btn btn-outline-primary w-100"> Lihat Ajuan Pengabdian <i class="bx bx-right-arrow-alt"></i></a>
+                            <a href="javascript:void(0);" class="btn btn-outline-primary w-100"> Lihat Ajuan
+                                Pengabdian <i class="bx bx-right-arrow-alt"></i></a>
 
                         </div>
                     </div>
@@ -149,73 +156,100 @@
     </div>
 
     <div class="row">
-       <div class="col-lg-7 col-md-12 col-12">
-        <div class="card mb-4">
-            <div class="card-body d-flex flex-column">
-                <span class="fw-bold">Informasi Kaprodi</span>
-                <span class="text-muted">
-                    Berisikan informasi tentang data kaprodi
-                </span>
-                <hr>
-                <div class="col-12">
-                    <div class="d-flex align-items-center justify-content-between mb-2">
-                        <div class="d-flex align-items-center">
-                            <span class="fw-semibold lh-1">NIDN</span>
-                        </div>
-                        <span class="lh-1">001</span>
-                    </div>
+        <div class="col-lg-7 col-md-12 col-12">
+            <div class="card mb-4">
+                <div class="card-body d-flex flex-column">
+                    <span class="fw-bold">Informasi Kaprodi</span>
+                    <span class="text-muted">
+                        Berisikan informasi tentang data kaprodi
+                    </span>
                     <hr>
-                    <div class="d-flex align-items-center justify-content-between mb-2">
-                        <div class="d-flex align-items-center">
-                            <span class="fw-semibold lh-1">Email</span>
+                    <div class="col-12">
+                        <div class="d-flex align-items-center justify-content-between mb-2">
+                            <div class="d-flex align-items-center">
+                                <span class="fw-semibold lh-1">NIDN</span>
+                            </div>
+                            <span class="lh-1">001</span>
                         </div>
-                        <span class="lh-1">mail.prodi@pindai.com</span>
-                    </div>
-                    <hr>
-                    <div class="d-flex align-items-center justify-content-between mb-2">
-                        <div class="d-flex align-items-center">
-                            <span class="fw-semibold lh-1">No. Hp</span>
+                        <hr>
+                        <div class="d-flex align-items-center justify-content-between mb-2">
+                            <div class="d-flex align-items-center">
+                                <span class="fw-semibold lh-1">Email</span>
+                            </div>
+                            <span class="lh-1">mail.prodi@pindai.com</span>
                         </div>
-                        <span class="lh-1">08123456789</span>
-                    </div>
-                    <hr>
-                    <div class="d-flex align-items-center justify-content-between mb-2">
-                        <div class="d-flex align-items-center">
-                            <span class="fw-semibold lh-1">Jabatan Fungsional</span>
+                        <hr>
+                        <div class="d-flex align-items-center justify-content-between mb-2">
+                            <div class="d-flex align-items-center">
+                                <span class="fw-semibold lh-1">No. Hp</span>
+                            </div>
+                            <span class="lh-1">08123456789</span>
                         </div>
-                        <span class="lh-1">null</span>
-                    </div>
-                    <hr>
-                    <div class="d-flex align-items-center justify-content-between mb-2">
-                        <div class="d-flex align-items-center">
-                            <span class="fw-semibold lh-1">SK Jabatan Fungsional</span>
+                        <hr>
+                        <div class="d-flex align-items-center justify-content-between mb-2">
+                            <div class="d-flex align-items-center">
+                                <span class="fw-semibold lh-1">Jabatan Fungsional</span>
+                            </div>
+                            <span class="lh-1">null</span>
                         </div>
-                        <span class="lh-1">null</span>
-                    </div>
-                    <hr>
-                    <div class="d-flex align-items-center justify-content-between mb-2">
-                        <div class="d-flex align-items-center">
-                            <span class="fw-semibold lh-1">Prodi</span>
+                        <hr>
+                        <div class="d-flex align-items-center justify-content-between mb-2">
+                            <div class="d-flex align-items-center">
+                                <span class="fw-semibold lh-1">SK Jabatan Fungsional</span>
+                            </div>
+                            <span class="lh-1">null</span>
                         </div>
-                        <span class="lh-1">Teknologi Informasi</span>
-                    </div>
-                    <hr>
-                    <div class="d-flex align-items-center justify-content-between mb-2">
-                        <div class="d-flex align-items-center">
-                            <span class="fw-semibold lh-1">Schopus ID</span>
+                        <hr>
+                        <div class="d-flex align-items-center justify-content-between mb-2">
+                            <div class="d-flex align-items-center">
+                                <span class="fw-semibold lh-1">Prodi</span>
+                            </div>
+                            <span class="lh-1">Teknologi Informasi</span>
                         </div>
-                        <span class="lh-1">10213123213</span>
-                    </div>
-                    <hr>
-                    <div class="d-flex align-items-center justify-content-between mb-2">
-                        <div class="d-flex align-items-center">
-                            <span class="fw-semibold lh-1">Scholar ID</span>
+                        <hr>
+                        <div class="d-flex align-items-center justify-content-between mb-2">
+                            <div class="d-flex align-items-center">
+                                <span class="fw-semibold lh-1">Schopus ID</span>
+                            </div>
+                            <span class="lh-1">10213123213</span>
                         </div>
-                        <span class="lh-1">10213123213</span>
+                        <hr>
+                        <div class="d-flex align-items-center justify-content-between mb-2">
+                            <div class="d-flex align-items-center">
+                                <span class="fw-semibold lh-1">Scholar ID</span>
+                            </div>
+                            <span class="lh-1">10213123213</span>
+                        </div>
                     </div>
                 </div>
             </div>
-           </div>
-       </div>
+        </div>
+
+        <div class="col-lg-5 col-md-12 col-12">
+            <div class="card mb-4">
+                <div class="card-body d-flex flex-column">
+                    <span class="fw-bold">Usulan Terakhir</span>
+                    <span class="text-muted">
+                        Melihat usulan terakhir penelitian atau pengabdian kepada masyarakat
+                    </span>
+                    <hr>
+                    <div class="col-12">
+                        <div class="d-flex align-items-center justify-content-between mb-2">
+                            <div class="d-flex align-items-center">
+                                <span class="fw-semibold lh-1">Penelitian</span>
+                            </div>
+                            <x-custom.link route="kaprodi.penelitian" title="Lihat Usulan Terakhir Penelitian" icon="bx-right-arrow-alt"/>
+                        </div>
+                        <hr>
+                        <div class="d-flex align-items-center justify-content-between mb-2">
+                            <div class="d-flex align-items-center">
+                                <span class="fw-semibold lh-1">Pengabdian</span>
+                            </div>
+                            <x-custom.link route="kaprodi.pengabdian" title="Lihat Usulan Terakhir Pengabdian" icon="bx-right-arrow-alt"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>

@@ -1,3 +1,5 @@
+@section('title', 'Detail Penelitian')
+
 <div>
     <div class="row">
         <x-custom.breadcrumb :items="[

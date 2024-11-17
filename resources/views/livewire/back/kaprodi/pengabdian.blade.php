@@ -1,3 +1,5 @@
+@section('title', 'Pengabdian')
+
 <div>
     <div class="row">
          <x-custom.breadcrumb :items="[
@@ -9,9 +11,6 @@
     <div class="row">
         <div class="col-md-12">
             <div class="card">
-                <div class="card-header">
-                    <h4 class="card-title">Pengabdian</h4>
-                </div>
                 <div class="card-body row g-3">
                     <div class="col-md-4 col-lg-4 order-1 col-12">
                         <input type="text" class="form-control" placeholder="Cari Pengabdian">
@@ -44,8 +43,8 @@
 
         <div class="col-12 mt-4">
             <div class="card">
-                <div class="card-datatable table-responsive">
-                    <table class="datatables-basic table">
+                <div class="card-body table-responsive">
+                    <table class="table table-striped table-bordered">
                         <thead>
                             <tr class="text-center">
                                 <th>No</th>
