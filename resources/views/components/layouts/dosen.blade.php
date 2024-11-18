@@ -31,12 +31,15 @@
     
         <!-- Helpers -->
         <script src="{{ asset('assets/vendor/js/helpers.js')}}"></script>
+        {{-- jquery min --}}
+        <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     
         <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
         <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
         <script src="{{ asset('assets/js/config.js')}}"></script>
 
-                <title>@yield('title') ?? 'Page Title' </title>
+        <title>@yield('title') - {{ config('app.name') }} </title>
+        @livewireStyles()
 
     </head>
     <body>
@@ -64,10 +67,10 @@
                         </div>
                         <!-- / Content -->
         
-                       @include('components.dosen.inc.footer')
-        
-                        <div class="content-backdrop fade"></div>
+                        
+                        {{-- <div class="content-backdrop fade"></div> --}}
                     </div>
+                    @include('components.dosen.inc.footer')
                     <!-- Content wrapper -->
                 </div>
                 <!-- / Layout page -->
@@ -96,5 +99,11 @@
     
         <!-- Place this tag in your head or just before your close body tag. -->
         <script async defer src="https://buttons.github.io/buttons.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+        @livewireScripts()
+        @stack('js')
+
+       
     </body>
 </html>

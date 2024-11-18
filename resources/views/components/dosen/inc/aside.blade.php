@@ -60,7 +60,7 @@
     <ul class="menu-inner py-1">
         <!-- Dashboard -->
         <li class="menu-item active">
-            <a href="{{ route("dashboard") }}" class="menu-link">
+            <a href="{{ route("dosen.dashboard") }}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-home-circle"></i>
                 <div data-i18n="Analytics">Dashboard</div>
             </a>
@@ -70,13 +70,13 @@
         <li class="menu-header small text-uppercase"><span class="menu-header-text">Main Menu</span></li>
         <!-- Cards -->
         <li class="menu-item">
-            <a href="{{ route('penelitian') }}" class="menu-link">
+            <a href="{{ route('dosen.penelitian') }}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-collection"></i>
                 <div data-i18n="Basic">Penelitian</div>
             </a>
         </li>
         <li class="menu-item">
-            <a href="{{ route('pengabdian') }}" class="menu-link">
+            <a href="{{ route('dosen.pengabdian') }}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-collection"></i>
                 <div data-i18n="Basic">Pengabdian</div>
             </a>

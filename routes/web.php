@@ -62,6 +62,8 @@ Route::prefix('kaprodi')->name('kaprodi.')->group(function () {
 Route::prefix('dosen')->name('dosen.')->group(function () {
     Route::get('dasbor', DosenDashboard::class)->name('dashboard');
     Route::get('penelitian', \App\Livewire\Back\Dosen\Penelitian::class)->name('penelitian');
+    Route::get('penelitian/create', \App\Livewire\Back\Dosen\Penelitian\Create::class)->name('penelitian.create');
+    Route::get('penelitian/{penelitianId}/edit', \App\Livewire\Back\Dosen\Penelitian\Edit::class)->name('penelitian.edit');
     Route::get('pengabdian', \App\Livewire\Back\Dosen\Pengabdian::class)->name('pengabdian');
     Route::get('my-account', \App\Livewire\Back\Dosen\MyAccount::class)->name('my-account');
 });

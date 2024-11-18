@@ -131,8 +131,11 @@
                                 </div>
 
                             </div>
-                            <a href="javascript:void(0);" class="btn btn-outline-primary w-100"> Lihat Ajuan Penelitian
-                                <i class="bx bx-right-arrow-alt"></i></a>
+                            <x-custom.link route="kaprodi.penelitian" tooltip="Lihat Ajuan Penelitian"
+                                icon="bx-right-arrow-alt" btn="btn-outline-primary w-100 btn-md"> Lihat Ajuan 
+                                Penelitian
+                            </x-custom.link>
+
                         </div>
                     </div>
                 </div>
@@ -145,9 +148,10 @@
                                 </div>
 
                             </div>
-                            <a href="javascript:void(0);" class="btn btn-outline-primary w-100"> Lihat Ajuan
-                                Pengabdian <i class="bx bx-right-arrow-alt"></i></a>
 
+                            <x-custom.link route="kaprodi.pengabdian" tooltip="Lihat Ajuan Pengabdian"
+                                icon="bx-right-arrow-alt" btn="btn-outline-primary w-100 btn-md"> Lihat Ajuan
+                                Pengabdian </x-custom.link>
                         </div>
                     </div>
                 </div>
@@ -238,14 +242,16 @@
                             <div class="d-flex align-items-center">
                                 <span class="fw-semibold lh-1">Penelitian</span>
                             </div>
-                            <x-custom.link route="kaprodi.penelitian" title="Lihat Usulan Terakhir Penelitian" icon="bx-right-arrow-alt"/>
+                            <x-custom.link route="kaprodi.penelitian" tooltip="Lihat Usulan Terakhir Penelitian"
+                                icon="bx-right-arrow-alt" />
                         </div>
                         <hr>
-                        <div class="d-flex align-items-center justify-content-between mb-2">
+                        <div class="d-flex align-items-center justify-content-between">
                             <div class="d-flex align-items-center">
                                 <span class="fw-semibold lh-1">Pengabdian</span>
                             </div>
-                            <x-custom.link route="kaprodi.pengabdian" title="Lihat Usulan Terakhir Pengabdian" icon="bx-right-arrow-alt"/>
+                            <x-custom.link route="kaprodi.pengabdian" tooltip="Lihat Usulan Terakhir Pengabdian"
+                                icon="bx-right-arrow-alt" />
                         </div>
                     </div>
                 </div>

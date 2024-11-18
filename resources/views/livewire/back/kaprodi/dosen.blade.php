@@ -1,6 +1,5 @@
 @section('title', 'Dosen')
 
-
 <div>
     <div class="row">
         <x-custom.breadcrumb :items="[
@@ -12,16 +11,14 @@
     <div class="row">
         <div class="col-md-12">
             <div class="card">
-                <div class="card-header">
-                    <div class="d-flex align-items-center justify-content-between">
-                        <a href="javascript:void(0);" class="btn btn-primary btn-md"> <i class="bx bx-plus"></i> Tambah Dosen </a>
-                    </div>
-                </div>
+                
                 <div class="card-body row g-3">
+                    <div class="col-md-4 col-lg-2 order-1 col-12">
+                        <a href="#" class="btn btn-outline-primary w-100 btn-md"> <i class="bx bx-plus"></i> Tambah Dosen </a>
+                    </div>
                     <div class="col-md-4 col-lg-4 order-1 col-12">
                         <input type="text" class="form-control" placeholder="Cari Dosen">
                     </div>
-                
                     
                     <div class="col-md-4 col-lg-2 order-1 col-12">
                         <button class="btn btn-outline-primary w-100"> <i class="bx bx-refresh"></i> Refresh Data</button>
