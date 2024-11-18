@@ -1,5 +1,5 @@
 <div wire:ignore.self class="modal fade" id="formAnggotaTerdaftar" tabindex="-1" aria-modal="true" role="dialog">
-    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="modalCenterTitle">Pilih Anggota Terdaftar</h5>

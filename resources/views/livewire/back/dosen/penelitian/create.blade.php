@@ -48,7 +48,7 @@
                                 </label>
                                 <textarea class="form-control" placeholder="Deskripsi Penelitian" rows="3" style="resize: none;"></textarea>
                             </div>
-                            <div class="col-12">
+                            <div class="col-12 col-md-4 col-lg-6">
                                 <label class="form-label">Jenis Penelitian <span class="text-danger">*</span>
                                 </label>
                                 <div class="input-group">
@@ -60,6 +60,21 @@
                                     </select>
                                     <label class="input-group-text" for="inputGroupSelect02" data-bs-toggle="tooltip" data-bs-placement="top" title="Lihat Jenis Penelitian">
                                         <button type="button" wire:click="openModalJenisPenelitian()" class="btn btn-outline-primary btn-sm"> <i class="bx bx-info-circle"></i></button>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 col-lg-6">
+                                <label class="form-label">Jenis Indeksasi <span class="text-danger">*</span>
+                                </label>
+                                <div class="input-group">
+                                    <select class="form-select" id="inputGroupSelect02">
+                                        <option selected="">-- Pilih Jenis Indeksasi --</option>
+                                        @foreach ($selectJenisIndeksasi as $jenisIndeksasi)
+                                            <option value="{{ $jenisIndeksasi }}">{{ $jenisIndeksasi }}</option>
+                                        @endforeach
+                                    </select>
+                                    <label class="input-group-text" for="inputGroupSelect02" data-bs-toggle="tooltip" data-bs-placement="top" title="Lihat Jenis Indeksasi">
+                                        <button type="button" wire:click="openModalJenisIndeksasi()" class="btn btn-outline-primary btn-sm"> <i class="bx bx-info-circle"></i></button>
                                     </label>
                                 </div>
                             </div>
@@ -137,7 +152,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-12 col-md-12 col-lg-12 d-flex gap-3 ">
+                            <div class="col-12 col-md-12 col-lg-12 row g-3">
                                 <div class="col-12 col-md-4 col-lg-3">
                                     <button type="button" wire:click="openModalAnggotaTerdaftar()"
                                         class="btn btn-outline-primary btn-md w-100"> <i class="bx bx-plus"></i> Pilih
@@ -145,7 +160,7 @@
                                 </div>
 
                                 <div class="col-12 col-md-4 col-lg-3">
-                                    <button type="button" class="btn btn-outline-info btn-md w-100"> Pilih Anggota
+                                    <button type="button" wire:click="openModalAnggotaManual()" class="btn btn-outline-info btn-md w-100"> Pilih Anggota
                                         Baru
                                         (Manual) </button>
                                 </div>
@@ -195,8 +210,7 @@
 
                             <div class="col-12">
                                 <button type="submit" wire:loading.attr="disabled"
-                                    class="btn btn-primary me-2 w-100">Simpan dan
-                                    Lanjutkan</button>
+                                    class="btn btn-primary me-2 w-100">Simpan Dan Preview</button>
 
                             </div>
                         </div>
@@ -205,7 +219,9 @@
             </div>
         </div>
         @include('livewire.back.dosen.penelitian.modal.terdaftar')
+        @include('livewire.back.dosen.penelitian.modal.manual-anggota')
         @include('livewire.back.dosen.penelitian.modal.jenis-penelitian')
+        @include('livewire.back.dosen.penelitian.modal.jenis-indeksasi')
     </div>
 
 
@@ -214,11 +230,20 @@
             Livewire.on('openModalTerdaftar', () => {
                 $('#formAnggotaTerdaftar').modal('show');
             });
+            Livewire.on('openModalManual', () => {
+                $('#formAnggotaManual').modal('show');
+            });
             Livewire.on('openModalJenisPenelitian', () => {
                 $('#formJenisPenelitian').modal('show');
             });
+            Livewire.on('openModalJenisIndeksasi', () => {
+                $('#formJenisIndeksasi').modal('show');
+            });
             Livewire.on('closeModalTerdaftar', () => {
                 $('#formAnggotaTerdaftar').modal('hide');
+            });
+            Livewire.on('closeModalManual', () => {
+                $('#formAnggotaManual').modal('hide');
             });
         </script>
     @endpush

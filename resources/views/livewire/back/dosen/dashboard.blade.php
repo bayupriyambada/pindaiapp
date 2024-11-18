@@ -117,7 +117,6 @@
                     <span class="text-muted">
                         Anda dapat melakukan penelitian dan pengabdian kepada masyarakat.
                     </span>
-
                 </div>
             </div>
             <div class="row">

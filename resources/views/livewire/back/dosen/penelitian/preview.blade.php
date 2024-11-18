@@ -1,38 +1,28 @@
-@section('title', 'Detail Penelitian')
+@section('title', 'Preview Penelitian')
 
 <div>
     <div class="row">
         <x-custom.breadcrumb :items="[
             ['title' => 'Dasbor'],
             ['title' => 'Penelitian'],
-            ['title' => 'Detail'],
+            ['title' => 'Preview'],
             ['title' => 'Penelitian A'],
         ]" />
-
     </div>
 
-    <div class="row g-3">
-        <div class="col-md-7 col-12 col-lg-8 order-1 g-3">
+    <div class="row">
+        <div class="col-12">
             <div class="card">
                 <div class="card-body d-flex flex-column">
-                    <span class="fw-bold">Informasi Penelitian: Penelitian A</span>
+                    <span class="fw-bold">Preview Penelitian: Penelitian A</span>
                     <span class="text-muted">
-                        Kaprodi dapat menyetujui / menolak penelitian yang diajukan oleh dosen.
+                        Memastikan dokumen penelitian sudah sesuai dengan form penelitian.
                     </span>
                 </div>
             </div>
         </div>
-        <div class="col-md-5 col-12 col-lg-4 order-1">
-            <div class="card">
-                <div class="card-body d-flex gap-2">
-                    <button class="btn btn-outline-success w-100"> <i class="bx bx-check"></i> Setujui</button>
-                    <button class="btn btn-outline-danger w-100"> <i class="bx bx-x"></i> Tolak</button>
-                </div>
-            </div>
-        </div>
     </div>
-
-    <div class="row mt-4">
+     <div class="row mt-4">
         <div class="col-12">
             <div class="card">
                 <div class="card-body">
@@ -154,7 +144,7 @@
                             </thead>
                             <tbody>
                                 <tr class="text-center">
-                                    <td colspan="8">
+                                    <td colspan="8" >
                                         Ketua Kelompok
                                     </td>
                                 </tr>
@@ -182,14 +172,10 @@
                                         1231232131
                                     </td>
                                     <td>
-                                        <span class="badge bg-label-info me-1" data-bs-html="true"
-                                            data-bs-toggle="tooltip" data-bs-offset="0,4" data-bs-placement="top"
-                                            title="Disetujui Kaprodi">
+                                        <span class="badge bg-label-info me-1" data-bs-html="true" data-bs-toggle="tooltip" data-bs-offset="0,4" data-bs-placement="top" title="Disetujui Kaprodi">
                                             <i class="bx bx-check"></i>
                                         </span>
-                                        <span class="badge bg-label-warning me-1" data-bs-html="true"
-                                            data-bs-toggle="tooltip" data-bs-offset="0,4" data-bs-placement="top"
-                                            title="Menunggu Persetujuan DPPM">
+                                        <span class="badge bg-label-warning me-1" data-bs-html="true" data-bs-toggle="tooltip" data-bs-offset="0,4" data-bs-placement="top" title="Menunggu Persetujuan DPPM">
                                             <i class="bx bx-time"></i>
                                         </span>
                                         {{-- <span class="badge bg-label-success me-1" data-bs-html="true" data-bs-toggle="tooltip" data-bs-offset="0,4" data-bs-placement="top" title="Disetujui DPPM">
@@ -198,7 +184,7 @@
                                     </td>
                                 </tr>
                                 <tr class="text-center">
-                                    <td colspan="8">
+                                    <td colspan="8" >
                                         Anggota Kelompok
                                     </td>
                                 </tr>
@@ -226,9 +212,7 @@
                                         1231232131
                                     </td>
                                     <td>
-                                        <span class="btn btn-outline-info btn-sm readonly" data-bs-html="true"
-                                            data-bs-toggle="tooltip" data-bs-offset="0,4" data-bs-placement="top"
-                                            title="Otomatis Mengikuti Ketua Kelompok">
+                                        <span class="btn btn-outline-info btn-sm readonly" data-bs-html="true" data-bs-toggle="tooltip" data-bs-offset="0,4" data-bs-placement="top" title="Otomatis Mengikuti Ketua Kelompok">
                                             <i class="bx bx-sync"></i>
                                         </span>
                                     </td>
@@ -265,15 +249,14 @@
                                 </tr>
                             </thead>
                             <tbody>
-
+                               
                                 <tr class="text-center">
 
                                     <td>
                                         Mengabdikan diri
                                     </td>
                                     <td>
-                                        <a href="javascript:void(0);" class="btn  btn-outline-secondary btn-sm"> <i
-                                                class="bx bx-link"></i> Link Publikasi </a>
+                                        <a href="javascript:void(0);" class="btn  btn-outline-secondary btn-sm"> <i class="bx bx-link"></i> Link Publikasi </a>
                                     </td>
                                     <td>
                                         Penelitian
@@ -281,20 +264,17 @@
                                     <td>
                                         22 Nov 2024
                                     </td>
-
+                                   
                                     <td>
-                                        <span class="btn btn-outline-secondary btn-sm disabled"> <i
-                                                class="bx bx-x"></i> Belum Set </span>
+                                        <span class="btn btn-outline-secondary btn-sm disabled"> <i class="bx bx-x"></i> Belum Set </span>
                                     </td>
                                     <td>
-                                        <span class="btn btn-outline-info btn-sm" data-bs-html="true"
-                                            data-bs-toggle="tooltip" data-bs-offset="0,4" data-bs-placement="top"
-                                            title="Lihat Dokumen Publikasi">
-                                            <i class="bx bxs-file-doc"></i>
+                                        <span class="btn btn-outline-info btn-sm" data-bs-html="true" data-bs-toggle="tooltip" data-bs-offset="0,4" data-bs-placement="top" title="Lihat Dokumen Publikasi">
+                                           <i class="bx bxs-file-doc"></i>
                                         </span>
                                     </td>
                                 </tr>
-
+                               
                             </tbody>
                         </table>
                     </div>

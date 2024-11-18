@@ -1,8 +1,8 @@
-<div wire:ignore.self class="modal fade" id="formJenisPenelitian" tabindex="-1" aria-modal="true" role="dialog">
+<div wire:ignore.self class="modal fade" id="formJenisIndeksasi" tabindex="-1" aria-modal="true" role="dialog">
     <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="modalCenterTitle">Daftar Jenis Penelitian</h5>
+                <h5 class="modal-title" id="modalCenterTitle">Daftar Jenis Indeksasi</h5>
                 <button type="button" wire:click="closeModalAnggotaTerdaftar()" class="btn-close"
                     data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
@@ -22,7 +22,7 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach ($listJenisPenelitian as $item)
+                                    @foreach ($listJenisIndeksasi as $item)
                                         <tr class="text-center">
                                             <td>{{ $loop->iteration }}</td>
                                             <td>{{ $item['jenis_kegiatan'] }}</td>
@@ -45,12 +45,7 @@
                 </div>
 
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-outline-secondary" wire:click="closeModalAnggotaTerdaftar()">
-                    Batalkan
-                </button>
-                <button type="button" class="btn btn-primary">Pilih Anggota Terdaftar</button>
-            </div>
+            
         </div>
     </div>
 </div>
